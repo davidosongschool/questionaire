@@ -2,7 +2,7 @@
 
 
 .contain-quiz {
-    background: url("/question.jpg");
+    background: url("question.jpg");
     background-size: cover;
     margin-top: 30px;
     background-position: center;
