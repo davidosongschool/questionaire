@@ -14,6 +14,10 @@ let numSelected = 0;
 
 position = 1; //welcome screen
 
+
+
+
+
 $(".contain-quiz").on("click", ".select-options", function () {
     $(this).toggleClass("bg-grey");
     $(this).toggleClass("selected-option");
@@ -83,6 +87,23 @@ $(".contain-quiz").on("click", ".select-options", function () {
 
 
 $(".continue-btn").click(function () {
+
+    if (position == 2) {
+
+    // Check if email is valid 
+    let email = $('#mce-EMAIL').val();
+   
+    // Pass the email to the validator
+    let check = validEmail(email);
+
+    if (!check) {
+        $('#email-message').text("Please enter a valid email address!")
+        return;
+        }
+    }
+
+
+
     numSelected = 0;
     $(".continue-multi-select").addClass("d-none");
     console.log("clicked")
@@ -223,3 +244,9 @@ $(".restart-btn").click(function () {
     $(".select-options").removeClass("selected-option");
     $(".contain-kickstart-results").addClass("d-none");
 })
+
+
+function validEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+};
