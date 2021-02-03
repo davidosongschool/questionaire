@@ -2,14 +2,15 @@
 
 
 .contain-quiz {
-    border: 1px solid black;
-    border-radius: 15px;
+    background: url("/question.jpg");
+    background-size: cover;
     margin-top: 30px;
+    background-position: center;
 }
 
 .contain-section {
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     position: relative;
     border-radius: 5px;
     padding-top: 40px;
@@ -20,6 +21,11 @@
     border: 2 px solid black;
 }
 
+.contain-section-results {
+background-color: #fff !important;
+color: #000 !important;
+}
+
 .complete-center{
     position: absolute;
     top: 50%;
@@ -28,19 +34,24 @@
 }
 
 .btn-style  {
-    min-height: 40px;
+    min-height: 50px;
     width: 300px;
     text-align: center;
-    color: #fff;
-    background-color: #000;
-    line-height: 40px;
+    color: #000;
+    background-color: #E7D1AD;
+    line-height: 50px;
     cursor: pointer;
-    border-radius: 10px;
     margin-bottom: 20px;
 
 }
 
+a:hover {
+text-decoration: none !important;
+}
 
+.text-white {
+    color: #fff;
+}
 
 .btn-style:hover {
 background-color: #fff;
@@ -73,10 +84,20 @@ border: 1px solid #000;
 }
 
 
+.results-img {
+    height: 250px;
+    width: 350px;
+}
+
 @media(max-width: 992px) {
 
 .position1 h3, .position1  p {
 text-align: center !important;
+}
+
+.results-img {
+    height: 150px;
+    width: 250px;
 }
 
 .btn-style {

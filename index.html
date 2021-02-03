@@ -36,10 +36,13 @@
 
                 <!--Welcome Screen-->
                 <div class="contain-section position1">
-                    <div class="btn-style text-center continue-btn mx-auto complete-center">START QUIZ</div>
+                    <div class="complete-center">
+                    <h1 class="pt-4 text-center text-white">TAKE OUR QUIZ</h1>
+                    <div class="btn-style text-center continue-btn mx-auto">START QUIZ</div>
+                </div>
                 </div>
                 <!--Question 1-->
-                <div class="contain-section position2 d-none">
+                <div class="contain-section position2 d-none text-white">
                     <div class="col-12">
                         <div class="row">
                             <div class="mr-auto ml-3">1/7</div>
@@ -66,7 +69,7 @@
 
                 </div>
                 <!--Question 2-->
-                <div class="contain-section position3 d-none">
+                <div class="contain-section position3 d-none text-white">
                     <div class="col-12">
                         <div class="row">
                             <div class="mr-auto ml-3">2/7</div>
@@ -93,7 +96,7 @@
                 </div>
 
                 <!--Question 3 - Double Weighted-->
-                <div class="contain-section position4 d-none">
+                <div class="contain-section position4 d-none text-white">
                     <div class="col-12">
                         <div class="row">
                             <div class="mr-auto ml-3">3/7</div>
@@ -127,7 +130,7 @@
 
 
                 <!--Question 4 - DOuble Weighted -->
-                <div class="contain-section position5 d-none">
+                <div class="contain-section position5 d-none text-white">
                     <div class="col-12">
                         <div class="row">
                             <div class="mr-auto ml-3">4/7</div>
@@ -158,7 +161,7 @@
 
 
             <!--Question 5 - Single Weighted-->
-            <div class="contain-section position6 d-none">
+            <div class="contain-section position6 d-none text-white">
                 <div class="col-12">
                     <div class="row">
                         <div class="mr-auto ml-3">5/7</div>
@@ -186,7 +189,7 @@
 
 
             <!--Question 6 - Single Weighted-->
-            <div class="contain-section position7 d-none">
+            <div class="contain-section position7 d-none text-white">
                 <div class="col-12">
                     <div class="row">
                         <div class="mr-auto ml-3">6/7</div>
@@ -228,7 +231,7 @@
 
 
             <!--Question 7-->
-            <div class="contain-section position8 d-none">
+            <div class="contain-section position8 d-none text-white">
                 <div class="col-12">
                     <div class="row">
                         <div class="mr-auto ml-3">7/7</div>
@@ -272,21 +275,41 @@
 
 
             <!--Results-->
-            <div class="contain-section position9 d-none">
+            <div class="contain-section position9 d-none text-white contain-section-results">
                 <div class="col-12 text-right">
                     <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
                 </div>
                 <div class="col-12">
-                    <h3 class="text-center">Results!</h3>
+                    <h4 class="text-center">Your Results!</h4>
+                    <hr/>
                 </div>
-
-                <div class="contain-kickstart-results d-none">
-                    <h3>Kickstart - Scalp Specialist</h3>
+                <div class="row">
+                <div class="col-12 col-lg-6 contain-kickstart-results d-none text-right">
+                 <img src="/scalp-img.jpg" class="results-img">   
+                </div>
+                <div class="col-12 col-lg-6 contain-kickstart-results d-none">
+                <div class="text-left p-3 mt-2">
+                    <p class="pt-4">Based on your answers, our team suggests that you <strong>start your hair treatment plan with some scalp specialist products</strong>. Once you treat your scalp, you can then begin your essential plan suggested below!</p>
+                    <a href="https://bondhairhealth.ie/scalp-care-products/"><div class="btn-style">SHOP SCALP CARE PRODUCTS</div></a>
+                </div>
+                 </div>
                 </div>
                 <br /><br />
-                <h3>Essential Plan Results</h3>
-                <div id="contain-essential-categories"></div>
-
+                <h4 class="text-center pl-3 pr-3">Your Essential Plan Results</h4>
+                <hr/>
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-right">
+                        <div class="p-3 mt-2">
+                        <p>
+                            Based on your hair analysis, we suggest you treat your hair with our <strong><span id="contain-essential-categories"></span></strong> treatment plan. To purchase a treatment plan and find out more information, follow the link below!
+                        </p>
+                        <span id="treatment-button"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-left d-none d-lg-block">
+                        <img src="/treatment-img.jpg" class="results-img">   
+                    </div>
+                </div>
 
 
             </div>

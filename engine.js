@@ -113,32 +113,36 @@ $(".continue-btn").click(function () {
         console.log(essentialResults);
 
 
-        let linknormal = "/normal-hair-shop";
-        let linkdry = "/dry-hair-shop";
-        let linkoily = "/oily-hair-shop";
-        let linkcombo = "/combination-hair-shop";
-        let linkblonde = "/blonde-products"
-        let linkscalp = "/scalp-care-products"
+        let linknormal = '<a href="https://bondhairhealth.ie/normal-hair-shop/"><div class="btn-style ml-auto">NORMAL HAIR PLAN</div></a>';
+        let linkdry = '<a href="https://bondhairhealth.ie/dry-hair-shop/"><div class="btn-style ml-auto">DRY HAIR PLAN</div></a>';
+        let linkoily = '<a href="https://bondhairhealth.ie/oily-hair-shop/"><div class="btn-style ml-auto">OILY HAIR PLAN</div></a>';
+        let linkcombo = '<a href="https://bondhairhealth.ie/combination-hair-shop/"><div class="btn-style ml-auto">COMBINATION HAIR PLAN</div></a>';
 
+        let normalDes = 'Based on your hair analysis, we suggest you treat your hair with our normal hair treatment plan. To purchase a treatment plan and find out more information, follow the link below!';
 
         if (essentialResults.length > 1) {
-            document.getElementById('contain-essential-categories').innerHTML += "COMBO RESULT <br/>";
+            document.getElementById('contain-essential-categories').innerHTML += "combination hair";
+            document.getElementById('treatment-button').innerHTML = linkcombo;
 
         } else {
 
             if (essentialResults.includes("normal")) {
-                document.getElementById('contain-essential-categories').innerHTML += "NORMAL RESULT <br/>";
+                document.getElementById('contain-essential-categories').innerHTML += "normal hair";
+                document.getElementById('treatment-button').innerHTML = linknormal;
             }
 
             if (essentialResults.includes("dry")) {
-                document.getElementById('contain-essential-categories').innerHTML += "DRY RESULT <br/>";
+                document.getElementById('contain-essential-categories').innerHTML += "dry hair";
+                document.getElementById('treatment-button').innerHTML = linkdry;
             }
 
             if (essentialResults.includes("oily")) {
-                document.getElementById('contain-essential-categories').innerHTML += "OILY RESULT <br/>";
+                document.getElementById('contain-essential-categories').innerHTML += "oily hair";
+                document.getElementById('treatment-button').innerHTML = linkoily;
             }
             if (essentialResults.includes("combo")) {
-                document.getElementById('contain-essential-categories').innerHTML += "COMBO RESULT <br/>";
+                document.getElementById('contain-essential-categories').innerHTML += "combination hair";
+                document.getElementById('treatment-button').innerHTML = linkcombo;
             }
         }
 
