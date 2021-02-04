@@ -6,8 +6,7 @@
 }
 
 .contain-quiz {
-    background: url("question.jpg");
-    background-size: cover;
+    background: transparent;
     margin-top: 30px;
     background-position: center;
 }
@@ -32,7 +31,7 @@ border: none;
 }
 
 .contain-section-results {
-background-color: #fff !important;
+background-color: transparent;
 color: #000 !important;
 }
 
@@ -77,8 +76,8 @@ input[type="email"]{
     min-height: 50px !important;
     width: 300px;
     text-align: center;
-    color: #000 !important;
-    background-color: #d1cbc0 !important;
+    color: #fff !important;
+    background-color:#C84630 !important;
     line-height: 50px !important;
     cursor: pointer;
     margin-bottom: 20px;
