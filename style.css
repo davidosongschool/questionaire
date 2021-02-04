@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+body {
+    color: #fff;
+}
 
 #mce-error-response {
     display: none !important;
 }
 
 .contain-quiz {
-    background: transparent;
-    margin-top: 30px;
+    padding-top: 30px;
+    background: url("/quiz-bg.jpg");
     background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+    overflow-x: hidden;
+
 }
 
 #mc-embedded-subscribe {
@@ -16,9 +24,13 @@ border: none;
 }
 
 
+.header-text {
+    color: #fff;
+}
 
 .contain-section {
     width: 100%;
+    overflow-x: hidden;
     min-height: 750px;
     position: relative;
     border-radius: 5px;
@@ -31,8 +43,8 @@ border: none;
 }
 
 .contain-section-results {
-background-color: transparent;
 color: #000 !important;
+background-color: #fff !important;
 }
 
 .complete-center{
@@ -68,7 +80,7 @@ input[type="email"]{
     background-color: #E7D1AD;
     line-height: 50px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 
 }
 
@@ -80,9 +92,9 @@ input[type="email"]{
     background-color:#C84630 !important;
     line-height: 50px !important;
     cursor: pointer;
-    margin-bottom: 20px;
+ 
     margin: 0 auto !important;
-
+    margin-bottom: 20px !important;
 }
 
 
