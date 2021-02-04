@@ -45,6 +45,8 @@ border: none;
 .contain-section-results {
 color: #000 !important;
 background-color: #fff !important;
+height: 100%;
+width: 100%;
 }
 
 .complete-center{
