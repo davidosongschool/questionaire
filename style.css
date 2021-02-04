@@ -10,7 +10,7 @@ body {
 
 .contain-quiz {
     padding-top: 30px;
-    background: url("/quiz-bg.jpg");
+    background: url("quiz-bg.jpg");
     background-position: center;
     background-size: cover;
     width: 100vw;
