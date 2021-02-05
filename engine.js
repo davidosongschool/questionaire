@@ -89,7 +89,7 @@ $(".contain-quiz").on("click", ".select-options", function () {
 $(".continue-btn").click(function () {
 
     // Scroll to top of page when it is clicked
-    window.scrollTo(0, 0);
+    scroll(0,0);
 
     if (position == 2) {
 
