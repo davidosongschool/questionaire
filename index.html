@@ -32,150 +32,373 @@
 
 
 <body>
+
     <div class="contain-quiz">
         <div class="container">
             <div class="row">
-                <!--Contain Welcome Message-->
-                <div class="col-12 position1 text-center">
-                    <img src="claire.png" class="avatar-img">
-                    <div class="contain-text mx-auto shadow">
-                        <p>Hey there! I'm Claire from Tura Hair! Welcome to your free online hair consultation. Just
-                            answer a few short questions and I'll advice you on
-                            how to get the most out of your hair! </p>
+                <div class="col-12">
+
+                    <!--Welcome Screen-->
+                    <div class="contain-section position1">
+                        <div class="complete-center">
+                            <h2 class="text-center header-text text-bold mb-3">Complete our short assessment and find the treatment plan for you! 
+                            </h2>
+                            <div class="btn-style text-center continue-btn mx-auto">START CONSULTATION</div>
+                        </div>
                     </div>
-                    <div class="continue-btn mx-auto mt-3">GET STARTED</div>
+                    <!--Question 1-->
+                    <div class="contain-section position2 d-none">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mr-auto ml-3">1/7</div>
+                                <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="text-center"><i>About you</i></h3>
+                            <hr />
+                        </div>
+                        <div class="col-12 col-lg-6 mx-auto">
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://bondhairhealth.us7.list-manage.com/subscribe/post?u=8f34df1c5a5e4440ac405f341&amp;id=d98e8a7a0d"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate form-group" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME"
+                                                placeholder="Your First Name">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME"
+                                                placeholder="Your Last Name">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <input type="email" value="" name="EMAIL"
+                                                class="required email form-control" id="mce-EMAIL"
+                                                placeholder="Your Email Address">
+
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <input type="text" class="form-control" placeholder="Your Age">
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <div class="btn-style text-center select-options mx-auto">My hair is
+                                                    short</div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <div class="btn-style text-center select-options mx-auto">My hair is
+                                                    medium</div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <div class="btn-style text-center select-options mx-auto">My hair is
+                                                    long</div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                    <input type="text" name="b_8f34df1c5a5e4440ac405f341_d98e8a7a0d"
+                                                        tabindex="-1" value=""></div>
+                                                <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                    class="continue-btn mx-auto">Continue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Question 2-->
+                    <div class="contain-section position3 d-none">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mr-auto ml-3">2/7</div>
+                                <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                            </div>
+                        </div>
+                        <div class="col-12S">
+                            <h3 class="text-center">What's your hair colour?</h3>
+                            <hr />
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <!--Add blonde hair reccomendation if blonde is selected??-->
+                                <div class="addblonde btn-style text-center continue-btn mx-auto">Blonde</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="btn-style text-center continue-btn mx-auto">Brunette</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="btn-style text-center continue-btn mx-auto">Red</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Question 3 - Double Weighted-->
+                    <div class="contain-section position4 d-none">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mr-auto ml-3">3/7</div>
+                                <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="text-center">What's your hair texture?</h3>
+                            <hr />
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="addnormal2 btn-style text-center continue-btn mx-auto">Straight &
+                                    Smooth</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="addcombo2 btn-style text-center continue-btn mx-auto">Natural Kink
+                                    But Manageable</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="adddry2 btn-style text-center continue-btn mx-auto">Frizzy & Unruly
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="addoily2 btn-style text-center continue-btn mx-auto">Limp & Lacklustrey
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Question 4 - DOuble Weighted -->
+                    <div class="contain-section position5 d-none">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="mr-auto ml-3">4/7</div>
+                                <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="text-center">How’s your scalp health?</h3>
+                            <hr />
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="addnormal2 btn-style text-center continue-btn mx-auto">Normal</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="addoily2 btn-style text-center continue-btn mx-auto">Excessively Oily</div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="adddry2 btn-style text-center continue-btn mx-auto">Dry (partial dandruff)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!--Contain First Question - Describe Your Scalp Health-->
-                <div class="col-12 position2 text-center d-none">
-                    <img src="claire.png" class="avatar-img-2">
-                    <div class="contain-text shadow mx-auto">
-                        <p>Describe Your Scalp Health<br /> <span class="select-note">Select all that apply</span></p>
 
-                    </div>
-                    <div class="row mt-3">
-                        <!--Option 1-->
-                        <div class="col-12 col-lg-6 ">
-                            <div class="select-option selected-dry-q1 mt-3 mx-auto">DRY</div>
-                        </div>
-                        <!--Option 2-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-oily-q1 mt-3 mx-auto">OILY</div>
-                        </div>
-                        <!--Option 3-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-dandruff-q1 mt-3 mx-auto">DANDRUFF</div>
-                        </div>
-                        <!--Option 4-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-thinning-q1 mt-3 mx-auto">THINNING</div>
-                        </div>
-                        <!--Option 5-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-normal-q1 mt-3 mx-auto">NORMAL</div>
-                        </div>
 
+                <!--Question 5 - Single Weighted-->
+                <div class="contain-section position6 d-none">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="mr-auto ml-3">5/7</div>
+                            <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                        </div>
                     </div>
-                    <div class="continue-btn mx-auto mt-3 d-none">CONTINUE</div>
+                    <div class="col-12">
+                        <h3 class="text-center">What has been your hair’s journey?</h3>
+                        <hr />
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="addnormal btn-style text-center continue-btn mx-auto">Au Naturel</div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="addnormal btn-style text-center continue-btn mx-auto">Colouring</div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="adddry btn-style text-center continue-btn mx-auto">Chemically Processed
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
-                <!--Contain Second Question - Describe Your Hair-->
-                <div class="col-12 position3 text-center d-none">
-                    <img src="claire.png" class="avatar-img-2">
-                    <div class="contain-text shadow mx-auto">
-                        <p>Describe Your Hair<br /> <span class="select-note">Select all that apply</span></p>
+                <!--Question 6 - Single Weighted-->
+                <div class="contain-section position7 d-none">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="mr-auto ml-3">6/7</div>
+                            <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
 
+                        </div>
                     </div>
-                    <div class="row mt-3">
-                        <!--Option 1-->
-                        <div class="col-12 col-lg-6 ">
-                            <div class="select-option selected-dry-q2 mt-3 mx-auto">DRY</div>
+                    <div class="col-12">
+                        <h3 class="text-center">What are your hair loathes?</h3>
+                        <p class="text-center">Select all that apply</p>
+                        <hr />
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="addoily-selected btn-style text-center select-options mx-auto">Weak / Fine / No
+                                Volume </div>
                         </div>
-                        <!--Option 2-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-stressed-q2 mt-3 mx-auto">STRESSED</div>
+                        <div class="col-12 text-center">
+                            <div class="adddry-selected btn-style text-center select-options mx-auto">Unruly / Frizzy &
+                                Unmanageable</div>
                         </div>
-                        <!--Option 3-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-damaged-q2 mt-3 mx-auto">DAMAGED</div>
+                        <div class="col-12 text-center">
+                            <div class="addcombo-selected btn-style text-center select-options mx-auto">Oily root with
+                                Dry
+                                ends
+                            </div>
                         </div>
-                        <!--Option 4-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-limp-q2 mt-3 mx-auto">LIMP</div>
+                        <div class="col-12 text-center">
+                            <div class="addnormal-selected btn-style text-center select-options mx-auto">Nothing, I love
+                                my
+                                blank canvas
+                            </div>
                         </div>
-                        <!--Option 5-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-thinning-q2 mt-3 mx-auto">THINNING</div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-lackingShine-q2 mt-3 mx-auto">LACKING SHINE</div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-curly-q2 mt-3 mx-auto">CURLY</div>
-                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="btn-style mx-auto continue-btn continue-multi-select d-none">Continue</div>
+                    </div>
 
-                    </div>
-                    <div class="continue-btn mx-auto mt-3 d-none">CONTINUE</div>
+
                 </div>
 
-                <!--Contain Third Question - Describe Your Hair-->
-                <div class="col-12 position4 text-center d-none">
-                    <img src="claire.png" class="avatar-img-2">
-                    <div class="contain-text shadow mx-auto">
-                        <p>Select all that apply to you!</p>
 
+                <!--Question 7-->
+                <div class="contain-section position8 d-none">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="mr-auto ml-3">7/7</div>
+                            <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+
+                        </div>
                     </div>
-                    <div class="row mt-3">
-                        <!--Option 1-->
-                        <div class="col-12 col-lg-6 ">
-                            <div class="select-option selected-hottools-q3 mt-3 mx-auto">USE HOT TOOLS REGULARLY</div>
-                        </div>
-                        <!--Option 2-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-increate-shine-q3 mt-3 mx-auto">WANT TO INCREASE SHINE</div>
-                        </div>
-                        <!--Option 3-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-deep-repair-q3 mt-3 mx-auto">IN NEED OF DEEP REPAIR</div>
-                        </div>
-                        <!--Option 4-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-volume-root-q3 mt-3 mx-auto">WANT VOLUME FROM THE ROOT</div>
-                        </div>
-                        <!--Option 5-->
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-shredding-q3 mt-3 mx-auto">HAIR IS PRONE TO SHREDDING</div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-knotty-q3 mt-3 mx-auto">KNOTTY HAIR</div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="select-option selected-dry-shampoo-q3 mt-3 mx-auto">USE DRY SHAMPOO REGULARLY</div>
-                        </div>
-
+                    <div class="col-12">
+                        <h3 class="text-center">Have you any particular hair concerns?</h3>
+                        <p class="text-center">Select all that apply</p>
+                        <hr />
                     </div>
-                    <div class="continue-btn mx-auto mt-3 d-none">CONTINUE</div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="addscalp btn-style text-center select-options mx-auto">Thinning, Low Density
+                                Areas /
+                                Spotting</div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="addscalp btn-style text-center select-options mx-auto">Sensitive / Irritated
+                                Scalp
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="addscalp btn-style text-center select-options mx-auto">Dry Scalp with occasional
+                                Dandruff
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="addscalp btn-style text-center select-options mx-auto">Excess root Oils
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="addnothing btn-style text-center select-options mx-auto">None, it's just in need
+                                of
+                                some TLC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="btn-style mx-auto continue-btn continue-multi-select d-none">Continue</div>
+                    </div>
                 </div>
 
-              <!--Contain Third Question - Describe Your Hair-->
-              <div class="col-12 position5 text-center d-none">
-                <img src="claire.png" class="avatar-img-2">
-                <div class="contain-text shadow mx-auto">
-                    <p>Results!</p>
+
+                <!--Results-->
+                <div class="contain-section position9 d-none contain-section-results">
+                    <div class="col-12 text-right">
+                        <div class="restart-btn ml-auto mr-3"><i class="fas fa-redo"></i></div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="text-center">Your Results!</h4>
+                        <hr />
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 contain-kickstart-results d-none text-right">
+                            <img src="scalp-img.jpg" class="results-img">
+                        </div>
+                        <div class="col-12 col-lg-6 contain-kickstart-results d-none">
+                            <div class="text-left p-3 mt-2">
+                                <p class="pt-4">Based on your answers, our team suggests that you <strong>start your
+                                        hair
+                                        treatment plan with some scalp specialist products</strong>. Once you treat your
+                                    scalp, you can then begin your essential plan suggested below!</p>
+                                <a href="https://bondhairhealth.ie/scalp-care-products/">
+                                    <div class="btn-style">SHOP SCALP CARE PRODUCTS</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <h4 class="text-center pl-3 pr-3 mb-5">Your Essential Plan Results</h4>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-right">
+                            <div class="p-3 mt-2">
+                                <p>
+                                    Based on your hair analysis, we suggest you treat your hair with our <strong><span
+                                            id="contain-essential-categories"></span></strong> treatment plan. To
+                                    purchase a
+                                    treatment plan and find out more information, follow the link below!
+                                </p>
+                                <span id="treatment-button"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-left d-none d-lg-block">
+                            <img src="treatment-img.jpg" class="results-img">
+                        </div>
+                    </div>
+
 
                 </div>
-                <div class="row mt-3" id="results">
-                    
-                </div>
-                <div class="continue-btn mx-auto mt-3 d-none">CONTINUE</div>
             </div>
 
-            </div>
         </div>
+
+
+
+
+
     </div>
 </body>
 
 <script src="engine.js"></script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
 
 </html>
