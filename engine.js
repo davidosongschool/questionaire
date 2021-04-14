@@ -15,9 +15,6 @@ let numSelected = 0;
 position = 1; //welcome screen
 
 
-
-
-
 $(".contain-quiz").on("click", ".select-options", function () {
     $(this).toggleClass("bg-grey");
     $(this).toggleClass("selected-option");
@@ -116,6 +113,8 @@ $(".continue-btn").click(function () {
     // Results 
 
     if (position == 9) {
+
+        
 
         if (scalp > 0) {
             $(".contain-kickstart-results").removeClass("d-none");
