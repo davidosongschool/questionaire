@@ -1,4 +1,15 @@
 // Define variables 
+
+var dataObject = {
+    'event': 'Completed_Consultation',
+    'category': 'click',
+    'label': 'GA_Completed'
+  };
+  if(typeof dataLayer != 'undefined'){
+    dataLayer.push(dataObject);
+    console.log(dataObject); // For debugging
+  }
+
 let position;
 
 // Stores score for essential 
@@ -114,7 +125,7 @@ $(".continue-btn").click(function () {
 
     if (position == 9) {
 
-        
+
 
         if (scalp > 0) {
             $(".contain-kickstart-results").removeClass("d-none");
