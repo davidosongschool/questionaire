@@ -1,7 +1,7 @@
 // Define variables 
 
 var dataObject = {
-    'event': 'Completed_Consultation',
+    'event': 'Completed_consultation',
     'category': 'click',
     'label': 'GA_Completed'
   };
