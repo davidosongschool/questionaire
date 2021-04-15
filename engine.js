@@ -1,15 +1,4 @@
 // Define variables 
-
-var dataObject = {
-    'event': 'Completed_consultation',
-    'category': 'click',
-    'label': 'GA_Completed'
-  };
-  if(typeof dataLayer != 'undefined'){
-    dataLayer.push(dataObject);
-    console.log(dataObject); // For debugging
-  }
-
 let position;
 
 // Stores score for essential 
@@ -125,6 +114,19 @@ $(".continue-btn").click(function () {
 
     if (position == 9) {
 
+
+    // On results - Push to google analytics data layer  
+
+        
+    var dataObject = {
+        'event': 'Completed_consultation',
+        'category': 'click',
+        'label': 'GA_Completed'
+    };
+    if(typeof dataLayer != 'undefined'){
+        dataLayer.push(dataObject);
+        console.log(dataObject); // For debugging
+    }
 
 
         if (scalp > 0) {
